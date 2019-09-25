@@ -1,0 +1,35 @@
+body{
+    background: lightsteelblue;
+}
+main{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 150px 650px 150px;
+    grid-template-columns: 200px 6fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "aside article right"
+    "footer footer footer";
+}
+header{
+    background: lightgreen;
+    grid-area: header
+}
+aside{
+    background:lightsalmon;
+    grid-area: aside
+}
+article{
+    background: peru;
+    grid-area: article
+}
+#right{
+    background:lightsalmon;
+    grid-area: right
+}
+footer{
+    background: lightseagreen;
+    grid-area: footer;
+}

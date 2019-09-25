@@ -1,0 +1,48 @@
+body{
+    background: lightsteelblue;
+}
+main{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    /*height: 150px;*/
+    background: lightcyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav{
+width:70%;
+}
+nav > ul{
+list-style: none; /* zmiana punktorów listy */
+margin: 0;
+padding-left: 0;
+display: flex;
+justify-content: space-evenly; /* justify-content: space - (around, between) */
+}
+section{
+    display: flex;
+}
+aside{
+    width: 200px;
+    height: 700px;
+    background: lightseagreen;
+}
+article{
+    width: 800px;
+    height: 700px;
+    background: lightgoldenrodyellow;
+}
+#right{
+    width: 200px;
+    height: 700px;
+    background: lightcoral;
+}
+footer{
+    height: 150px;
+    background: lightgreen;
+}
