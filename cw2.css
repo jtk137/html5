@@ -1,0 +1,33 @@
+main{
+    width: 225px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "logo"
+    "data"
+    "plan"
+    "nawigacja"
+    "kontakt";
+}
+body{background: lightblue;
+}
+
+#logo{background: black;
+grid-area: glogo;
+}
+
+#data{background:  #efe5d9;
+    grid-area: gdata;
+
+}
+#plan{background: white;
+    grid-area: gplan;
+}
+#nawigacja{background: #694703;
+    grid-area: gnawigacja;
+}
+#kontakt{background: black;
+    grid-area: gkontakt;
+}

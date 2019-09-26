@@ -24,23 +24,23 @@ header{
     grid-area: header
 }
 #oferta1{
-    background:red;
+    background:lightcoral;
     grid-area: oferta1
 }
 #oferta2{
-    background:blue;
+    background:lightblue;
     grid-area: gaoferta2
 }
 #oferta3{
-    background:green;
+    background:mediumseagreen;
     grid-area: oferta3
 }
 #zdjecie{
-    background:yellow;
+    background:moccasin;
     grid-area: zdjecie
 }
 #uslugi1{
-    background:lightgreen;
+    background:mediumslateblue;
     grid-area: uslugi1
 }
 #uslugi2{
@@ -50,4 +50,38 @@ header{
 footer{
     background: lightblue;
     grid-area: footer;
+}
+@media(max-width: 800px) {
+    main{
+        width: 100%;
+        grid-template-rows: 60px 140px 300px 300px 200px 120px 120px 80px;
+        grid-template-columns:1fr 1fr;
+        grid-template-areas: 
+        "ganav ganav"
+        "header header"
+        "oferta1 gaoferta2" 
+        "oferta3 oferta3"
+        "zdjecie zdjecie"
+        "uslugi1 uslugi1"
+        "uslugi2 uslugi2"
+        "footer footer";
+        }
+}
+
+@media(max-width: 500px) {
+    main{
+        width: 100%;
+        grid-template-rows: 60px 140px 300px 300px 300px 200px 120px 120px 80px;
+        grid-template-columns:1fr;
+        grid-template-areas: 
+        "ganav"
+        "header"
+        "oferta1"
+        "gaoferta2" 
+        "oferta3"
+        "zdjecie"
+        "uslugi1"
+        "uslugi2"
+        "footer";
+        }
 }
