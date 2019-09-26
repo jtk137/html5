@@ -1,0 +1,52 @@
+body{
+    background: lightsteelblue;
+}
+main{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    height: 60px;
+    background: lightgreen;
+}
+#second{
+    height: 140px;
+    background:lightsalmon;
+}
+section{
+    display: flex;
+}
+aside{
+    width: 400px;
+    height: 500px;
+    background:red;
+}
+#middle{
+    width: 400px;
+    height: 500px;
+    background:blue;
+}
+#right{
+    width: 400px;
+    height: 500px;
+    background:green;
+}
+article{
+    height: 200px;
+    background:yellow;
+}
+#third{
+    width: 600px;
+    height: 200px;
+    background:lightgreen;
+}
+#fourth{
+    width: 600px;
+    height: 200px;
+    background:lightseagreen;
+}
+footer{
+    height: 80px;
+    background: lightblue;
+}

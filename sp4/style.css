@@ -1,0 +1,54 @@
+body{
+    background: lightsteelblue;
+}
+main{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 60px 140px 500px 200px 200px 80px;
+    grid-template-columns: 400px 200px 200px 400px;
+    grid-template-areas: 
+    "header header header header"
+    "second second second second"
+    "aside middle middle right"
+    "article article article article"
+    "third third fourth fourth"
+    "footer footer footer footer";
+}
+header{
+    background: lightgreen;
+    grid-area: header
+}
+#second{
+    background:lightsalmon;
+    grid-area: second
+}
+aside{
+    background:red;
+    grid-area: aside
+}
+#middle{
+    background:blue;
+    grid-area: middle
+}
+#right{
+    background:green;
+    grid-area: right
+}
+article{
+    background:yellow;
+    grid-area: article
+}
+#third{
+    background:lightgreen;
+    grid-area: third
+}
+#fourth{
+    background:lightseagreen;
+    grid-area: fourth
+}
+footer{
+    background: lightblue;
+    grid-area: footer;
+}
