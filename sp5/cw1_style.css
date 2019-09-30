@@ -1,0 +1,66 @@
+body {
+background: linear-gradient(to right, #AA3A38, #2F7336);
+}
+
+main {
+    margin: 50px auto 0 auto;
+    width: 1200px;
+    height: 8000px;
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    position: relative;
+}
+
+.kw{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+#k1{
+    background: lightgoldenrodyellow;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.855, 1);
+}
+
+#k1:hover{
+    background: red;
+    width: 100px;
+    height: 100px;
+} /* pseudoklasa: działa tylko, jak będzie na nim kursor */
+
+#k2{
+    background: lightsteelblue;
+    left: 50px;
+    top: 50px;
+    z-index: 3;
+    /* display: none; */
+    /* visibility: hidden; */
+    /* opacity = 0; */
+
+}
+
+#k3{
+    background: lightcyan;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+
+#k4{
+    background: lightsteelblue;
+    left: 150px;
+    top: 150px;
+    z-index: 1;
+}
+
+#cookies {
+    left: 0;
+    width: 100px;
+    height: 200px;
+    background: rgba(0,0,0,0.5);
+    top: calc(50% - 50px);
+    position: fixed;
+    overflow: hidden;
+}

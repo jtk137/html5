@@ -1,0 +1,91 @@
+body{
+    background: lightgoldenrodyellow;
+}
+
+.pasek{
+    width: 250px;
+    height: 10px;
+    border: 5px solid #fff;
+    margin: 10px;
+    background: lightgray;
+}
+
+.pasek1{
+    transition: all 0.2s ease-in-out;
+}
+
+.pasek1:hover{
+    background: red;
+}
+.pasek2 div{
+    transition: all 0.2s ease-in-out;
+    background: red;
+    height: 10px;
+    width: 0;
+}
+
+.pasek2:hover div{
+    width: 100%;
+}
+
+.pasek3{
+    position: relative;
+}
+
+.pasek3::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: red;
+    transition: all 0.2s ease-in-out;
+}
+
+.pasek3:hover::after{
+    width: 100%;
+}
+
+.pasek4{
+    position: relative;
+}
+
+.pasek4::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: red;
+}
+
+.pasek4:hover::before{
+    animation-name: pbar;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 8;
+    animation-timing-function: linear;
+}
+
+@keyframes pbar{
+    0% {
+        width: 0;
+        left: 0;
+    }
+    25%{
+        left: 25%;
+        width: 30%;
+    }
+    50%{
+        left: 50%;
+        width: 15%;
+    }
+    75%{
+        left: 75%;
+        width: 10%;
+    }
+    100%{
+        left: 100%;
+        width: 5%;
+    }
+}
