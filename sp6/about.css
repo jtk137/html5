@@ -1,7 +1,8 @@
 body{
     margin: 0;
-    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
-    background: f3f4f5;
+    font-family: 'Roboto Condensed', 'Roboto', Helvetica, sans-serif;
+    background: #f3f4f5;
+    padding-bottom: 64px;
 }
 a{
     color:#3c4a52;
@@ -18,7 +19,7 @@ a:hover{
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 950px;
+    height: 1400px;
 }
 main{
     width: 1140px;
@@ -52,62 +53,59 @@ nav a:hover{
     background: #ffc000;
     color: white;
 }
-#welcome{
-    color:#fff;
-    padding-bottom: 350px;
+
+.aboutimg{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 60px;
+    border: 6px solid #fff;
 }
-#welcome p{
-    font-size: 18px;
-    margin: 0;
-}
-#welcome .head{
-    font-weight: 900;
-    font-size: 96px;
-    margin-top: 226px;
-}
-#welcome .subhead{
-    font-family: 'Aleo', serif;
-    font-size: 28px;
-    color: #e2e2e2;
-    margin: 26px 0 14px;
-    font-weight: 800;
-}
-#welcome .subhead2{
-    font-weight: 600;
-    font-size: 24px;
-    margin: 25px 0 52px;
-}
-#welcome p.text{
-    max-width: 741px;
-}
+
 #start{
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
+
 }
 #start .col{
-    width: 30%;
+    width: 45.75%;
     color: #656a6f;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 24px;
 }
-#start h2{
-    font-size: 36px;
+
+#welcome h2{
+    font-size: 66px;
+    font-family: 'Roboto';
     color: #2d3438;
     font-weight: 600;
     display: flex;
     align-items: baseline;
     margin-bottom: 18px;
+    margin-top: 25px;
 }
-#start h2::after{
+#welcome h2::after{
     content:'';
-    font-size: 56px;
+    font-size: 86px;
     background: #ffc000;
     width: 8px;
     height: 8px;
     display: block;
     margin-left: 8px;
 }
+
+#welcome .subhead{
+    font-family: 'Aleo', serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #2d3438;
+    margin: 26px 0 14px;
+    font-weight: 800;
+}
+
 footer{
-    padding: 50px 0;
+    padding: 50px 0 50px;
     border-top: 1px solid #cad2d7;
     display: flex;
     justify-content: space-between;
@@ -116,11 +114,12 @@ footer{
 }
 footer img{
     margin-right: 0.5px;
+    padding-right: 0.5px;
     opacity: 0.4;
     transition: all 0.2s ease-in-out;
 }
 footer img:hover{
-    opacity:0.8;
+    opacity: 1;
 }
 .vcenter{
     display: flex;
