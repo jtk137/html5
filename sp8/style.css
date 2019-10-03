@@ -1,0 +1,19 @@
+body{
+    background: lightgoldenrodyellow;
+}
+
+#pudelko{
+    width: 800px;
+    height: 600px;
+    margin: 50px auto !important;
+        /* !important - ważność znacznika */
+}
+.lemonka{
+    background: limegreen;
+}
+.czerwony{
+    background: red;
+}
+.hidden{
+    display: none;
+}

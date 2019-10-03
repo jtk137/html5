@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>JS</title>
+</head>
+<body>
+    <p>
+        Podaj kolor: <input type="text" name="" id="kolor"> <!-- oninput="zmienKolor()" najstarszy sposób na obsługę zdarzeń-->
+    <button id="pokazUkryj">Pokaż/ukryj box'a</button>
+    <button id="odlicz">Odlicz do 10</button>
+    </p>
+
+    <div id="pudelko" class="lemonka">
+
+    </div>
+
+    <script type="text/javascript">
+    // pobieramy obiekt #pudelko
+        //let box = document.getElementById('pudelko')  lub:
+        let box = document.querySelector('#pudelko')
+        let kolorBox = document.querySelector('#kolor')
+        // GetElementById -> raczej nieużywany
+        let pokazUkryjBtn = document.getElementById('pokazUkryj')
+        let OdliczBtn = document.querySelector('#odlicz')
+
+        pokazUkryjBtn.addEventListener('click', pokazUkryjBox)
+        kolorBox.addEventListener('input', zmienKolor)
+        OdliczBtn.addEventListener('click', odliczanie)
+
+        //kolorBox.input = zmienKolor 
+        //obsluga zdarzen:
+
+        kolorBox.addEventListener('input', zmienKolor)
+        
+        //zmiana zawartości elementu:
+        box.innerHTML = '<b>To działa!</b>'
+
+        //zmiana formatowania używamy CamelCase
+        //box.style.backgroundColor = "lightblue" lub
+        //box.className += " czerwony"
+        box.classList.add('czerwony')
+        box.classList.remove('lemonka')
+
+
+        function zmienKolor() {
+                console.log(kolorBox.value)
+                box.style.backgroundColor = kolorBox.value
+        }
+
+        function pokazUkryjBox(e) {
+            console.log(e)
+            box.classList.toggle('hidden')
+        }
+            //I sposób
+        //function odliczanie() {
+            //for(let licznik=1; licznik<11; licznik++){
+                //box.innerHTML += '<br>' + licznik
+            //}
+        //}
+
+        let licznik = 1
+        let licznikInterval
+
+                // II sposób
+        //function odliczanie() {
+            //if (licznikInterval) {
+                //clearInterval(licznikInterval)
+                //licznikInterval = undefined
+            //}
+            //else {
+            //licznikInterval = setInterval(wypiszLicznik, 1000)  //w milisekundach
+            //}
+        //}
+
+                //III sposób
+        function odliczanie() {
+            if (licznik<11) {
+                wypiszLicznik()
+                setTimeout(odliczanie, 1000)
+            }
+        }
+
+            // do II i III sposobu
+        function wypiszLicznik() {
+            box.innerHTML += '<br>' + licznik
+            licznik++
+        }
+
+    </script>
+</body>
+</html>
